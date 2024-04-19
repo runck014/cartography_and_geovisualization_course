@@ -1,2 +1,2 @@
-# cartography_and_geovisualization_course
+# Cartography and Geovisualization
 Two semester sequence. Introduction to cartography through advanced geovisualization.
