@@ -33,7 +33,7 @@ By the end of this course, students will be able to:
 - Assignment 1: Discussion prework. ```Do a deep reading of Franconeri et al 2021 and Dimara et al 2022. Write a 4-6 page essay (no more than 1000 words) with your own visuals/sketches that 1) summarizes what we know about the science of data visualization. Draw from other visualization texts where appropriate. 2) For each thing we know, find your own example of someone breaking from best practice on the internet, screenshot it, and include it as a figure. Other items: Cite your sources. Do not use ChatGPT or other LLMs. Expect to spend ~6 hours minimum on this assignment. Produce a visually appealing final product with good layout and design.```
 
 
-
+# Week 3
 
 
 
