@@ -58,6 +58,7 @@ We'll use this simple file to discuss
 1. The document object model (DOM). This is illustrated below in Figure 1. See [here](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) for docs.
 2. Web Inspector.
 3. Browser security and the need for a local web server for development.
+4. DOM manipulation as essential for geovis.
 
 **Figure 1.** Illustration of the document object model for the simple HTML above.
 ```mermaid
