@@ -88,12 +88,38 @@ graph TD
 ```
 ## Convert Folder into a Node.js project
 
-1. In VS Code terminal, navigate to folder.
-2. Run `npm init- y`
+1. In VSCode terminal, navigate to folder.
+2. Run `npm init -y`
 3. Verify that a new file was created titled `package.json`
 4. Install vite with `npm install vite` (more on vite [here](https://www.npmjs.com/package/vite))
 
 
 ## Local Web Server
 
+1. Update `package.json` to work with vite.
+```
+        ...
+          "scripts": {
+            "dev": "vite",
+            "build": "vite build"
+          },
+        ...
+```
+2. In the terminal run `npm run dev`. Node Package Manager (npm) will look at package.json, see `"dev":"vite"` and run the site with vite.
 
+At this point, you should have had a browser open and your page should be displaying.
+
+## Cascading Style Sheets (CSS)
+
+1. In VSCode, open main.css.
+2. Add this to the file and save.
+```
+/* Main styles */
+h1 {
+    color: blue;
+}
+```
+
+Learn more about CSS [here](https://developer.mozilla.org/en-US/docs/Web/CSS).
+
+## 
