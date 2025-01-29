@@ -107,6 +107,7 @@ graph TD
         ...
 ```
 2. In the terminal run `npm run dev`. Node Package Manager (npm) will look at package.json, see `"dev":"vite"` and run the site with vite.
+3. Navigate to the local host address provided in the terminal. Something like `http://localhost:5173`.
 
 At this point, you should have had a browser open and your page should be displaying.
 
