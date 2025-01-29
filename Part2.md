@@ -34,7 +34,11 @@ By the end of this course, students will be able to:
 
 
 # Week 3
-
+- Welcome / Questions
+- Get started with downloading VSCode. Download Chrome.
+- Discussion: Pair/Share. Find gaps / additions. Update your document.
+- Finish setting up tech stack exploration.
+- Inspiration Assignment presentation for next week + project proposal discussion.
 
 
 
