@@ -1,3 +1,5 @@
+https://umn.zoom.us/j/6093343049
+
 # Advanced Geovisualization
 
 ## Course Description
