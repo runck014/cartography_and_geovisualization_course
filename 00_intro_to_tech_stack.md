@@ -2,7 +2,8 @@
 These lecture notes describe:
 1. setting up a development environment and project structure
 2. providing an overview of HTML, CSS, and JavaScript, including Node.JS, npm, Vite
-3. SVG and HTML Canvas
+
+In the following weeks, we'll introduce SVG and Canvas.
 
 
 # Development Environment
@@ -135,3 +136,7 @@ newDiv.textContent = 'Added dynamically';
 const container = document.querySelector('.container');
 container.appendChild(newDiv);
 ```
+
+
+## On Your Own
+Use JavaScript to create a website that introduces yourself.
