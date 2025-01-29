@@ -16,7 +16,7 @@ These lecture notes describe:
 2. Create new repo titled `5588_00_intro_repo`
 3. Open VSCode > View > Terminal
 4. Confirm you have git installed by typing 'git -version'
-5. In terminal navigate to your class folder on your computer using `ls` or `dir` to see directory contents, and `cd` to change directories
+5. In terminal navigate to your class folder on your computer using `ls` or `dir` to see directory contents, and `cd` to change directories. `mkdir <name>` creates a new folder.
 6. Clone the repo with `git clone <insert web address ending in .git` accessed on repo main page
 
 ## Project Structure
@@ -120,7 +120,18 @@ h1 {
 }
 ```
 
-Learn more about CSS [here](https://developer.mozilla.org/en-US/docs/Web/CSS).
+We'll take time in class to play with this. Learn more about CSS [here](https://developer.mozilla.org/en-US/docs/Web/CSS).
 
 ## JavaScript
+1. In VSCode, open `main.js`, and paste > save the below. 
 
+```
+// Create new div
+const newDiv = document.createElement('div');
+newDiv.className = 'new-content';
+newDiv.textContent = 'Added dynamically';
+
+// Add to container
+const container = document.querySelector('.container');
+container.appendChild(newDiv);
+```
