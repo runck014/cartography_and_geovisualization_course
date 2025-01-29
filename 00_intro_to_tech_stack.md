@@ -92,7 +92,7 @@ graph TD
 1. In VSCode terminal, navigate to folder.
 2. Run `npm init -y`
 3. Verify that a new file was created titled `package.json`
-4. Install vite with `npm install vite` (more on vite [here](https://www.npmjs.com/package/vite))
+4. Install vite with `npm install vite` (more on vite [here](https://www.npmjs.com/package/vite)). This will add a folder `node_modules` to your project. All of the library code is stored in here.
 
 
 ## Local Web Server
