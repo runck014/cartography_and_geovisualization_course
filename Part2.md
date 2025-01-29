@@ -31,14 +31,19 @@ By the end of this course, students will be able to:
   - [Franconeri et al. 2021](https://drive.google.com/file/d/1AdlqZH34GBYvx1FX4uYLZkR0wY0jXx6C/view?usp=drive_link)
   - [Dimara et al. 2022](https://drive.google.com/file/d/1mIHa3YSOAqK6zRczvMbXAfKiqfWqbVBn/view?usp=drive_link)
 - Assignment 1: Discussion prework. ```Do a deep reading of Franconeri et al 2021 and Dimara et al 2022. Write a 4-6 page essay (no more than 1000 words) with your own visuals/sketches that 1) summarizes what we know about the science of data visualization. Draw from other visualization texts where appropriate. 2) For each thing we know, find your own example of someone breaking from best practice on the internet, screenshot it, and include it as a figure. Other items: Cite your sources. Do not use ChatGPT or other LLMs. Expect to spend ~6 hours minimum on this assignment. Produce a visually appealing final product with good layout and design.```
-
+- Class Plan
+  - Welcome / Questions
+  - Get started with downloading VSCode. Download Chrome. See `00_intro_to_tech_stack.md` in this repo.
+  - Discussion: Pair/Share. Find gaps / additions. Update your document.
+  - Finish setting up tech stack exploration.
+  - Inspiration Assignment presentation for next week + project proposal discussion. See `inspiration_presentation_assignments.md` in this repo.
 
 # Week 3
-- Welcome / Questions
-- Get started with downloading VSCode. Download Chrome.
-- Discussion: Pair/Share. Find gaps / additions. Update your document.
-- Finish setting up tech stack exploration.
-- Inspiration Assignment presentation for next week + project proposal discussion.
+- Inspiration Assignment presentation for next week + project proposal discussion. See `inspiration_presentation_assignments.md` in this repo.
+```
+Coming out of this class period, you'll be prepared to write your project proposal for the first half of the semester.
+```
+- Project Proposal Guidelines
 
 
 
