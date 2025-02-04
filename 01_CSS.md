@@ -52,4 +52,25 @@ Built in CSS property for managing a grid of containers. Very useful for dashboa
 See [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout) for more details.
 
 ### CSS Values and Units of Measure
-There are many different units of measuring for controlling size and positioning. See this page [here](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units).
+There are many different units of measuring for controlling size and positioning. See this page [here](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units). Following is one categorization.
+
+| Unit Type | Unit | Description | Common Uses |
+|-----------|------|-------------|-------------|
+| **Absolute** ||||
+|| `px` | Fixed-size pixel unit. 1px = 1/96th of an inch on most screens | Borders, small fixed measurements, minimum/maximum constraints |
+| **Relative** ||||
+|| `rem` | Relative to root element's font size (default: 16px) | Font sizes, margins, paddings - ideal for consistent scaling |
+|| `em` | Relative to parent element's font size | Component-level spacing, especially when text scaling is desired |
+|| `%` | Relative to parent element's corresponding dimension | Fluid layouts, responsive widths/heights |
+| **Viewport** ||||
+|| `vw` | 1% of viewport width | Full-width elements, responsive typography |
+|| `vh` | 1% of viewport height | Full-height layouts, hero sections |
+|| `dvh` | Dynamic viewport height - adjusts for mobile browser chrome | Mobile-friendly full-height layouts |
+|| `vmin` | 1% of smaller viewport dimension | Maintaining aspect ratios, responsive square elements |
+|| `vmax` | 1% of larger viewport dimension | Background sizing, maximum content boundaries |
+| **Typography** ||||
+|| `ch` | Width of the "0" character in current font | Text container widths, especially for monospace fonts |
+|| `ex` | Height of the font's x-character | Vertical alignment with typography |
+|| `lh` | Value of the element's line-height | Vertical rhythm in typography |
+| **Grid** ||||
+|| `fr` | Fractional unit for distributing space in CSS Grid | Grid layouts with proportional columns/rows |
