@@ -1,5 +1,3 @@
-https://umn.zoom.us/j/6093343049
-
 # Advanced Geovisualization
 
 ## Course Description
@@ -41,11 +39,15 @@ By the end of this course, students will be able to:
   - Inspiration Assignment presentation for next week + project proposal discussion. See `inspiration_presentation_assignments.md` in this repo.
 
 # Week 3
-- Inspiration Assignment presentation for next week + project proposal discussion. See `inspiration_presentation_assignments.md` in this repo.
-```
-Coming out of this class period, you'll be prepared to write your project proposal for the first half of the semester.
-```
+- Inspiration Assignment presentation for next week + project proposal discussion. See `inspiration_presentation_assignments.md` in this repo. ```Coming out of this class period, you'll be prepared to write your project proposal for the first half of the semester.```
 - Project Proposal Guidelines
+- Class Plan
+  - Welcome / Questions
+  - Presentations
+  - Finish `00_intro_to_tech_stack.md` and intro to HTML.
+  - Presentations
+  - Review `project_proposal_guidelines.md`
+ 
 
 
 
