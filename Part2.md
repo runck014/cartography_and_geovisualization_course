@@ -49,5 +49,10 @@ By the end of this course, students will be able to:
   - Review `project_proposal_guidelines.md`
  
 
-
+# Week 4
+- Class Plan
+  - Welcome / Questions
+  - Share Project Proposals
+  - HTML and CSS for Semantic Structuring and Layout. Will will look at a demo page and then recreate the semantic structure in HTML and layout in CSS.
+- Assignment: Use HTML and CSS to create a layout of your project. It won't be styled and should only have placeholders for content.
 
