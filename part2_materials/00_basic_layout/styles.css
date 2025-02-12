@@ -2,6 +2,11 @@
     outline: 1px solid black; /* Outline all content */
 }
 
+body * {
+    border-radius: 0px;
+    outline: 2px solid black; /* Outline all content */
+}
+
 ul {
     list-style-type: none; /* Remove Bullets */
     padding: 0;
