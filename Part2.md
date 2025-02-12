@@ -53,6 +53,9 @@ By the end of this course, students will be able to:
 - Class Plan
   - Welcome / Questions
   - Share Project Proposals
+  - Practice sketching semantic elements on projects
+  - Practice reading HTML and drawing the DOM
+  - Create HTML and CSS for project proposal sketch
   - HTML and CSS for Semantic Structuring and Layout. Will will look at a demo page and then recreate the semantic structure in HTML and layout in CSS.
 - Assignment: Use HTML and CSS to create a layout of your project. It won't be styled and should only have placeholders for content.
 
