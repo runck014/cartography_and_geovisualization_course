@@ -5,7 +5,7 @@ ork across each of these types as well. This is called responsive web design.
 In order to create responsive designs, you in essence create a separate set of CSS rules for each size of screen. This is done with a media query:
 
 ```
-\* CSS Media Query *\
+/* CSS Media Query */
 /* Base styles (no media query needed) - will apply to all sizes */
 .container {
     padding: 1rem;
