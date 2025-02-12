@@ -58,4 +58,5 @@ By the end of this course, students will be able to:
   - Create HTML and CSS for project proposal sketch
   - HTML and CSS for Semantic Structuring and Layout. Will will look at a demo page and then recreate the semantic structure in HTML and layout in CSS.
 - Assignment: Use HTML and CSS to create a layout of your project. It won't be styled and should only have placeholders for content.
+- Document Object Model Demo from Class [link](https://docs.google.com/presentation/d/1uL1-dxaG9dcUDj28DshVLnWtGbRRoxugbnfdiIvbADA/edit#slide=id.g33444e3d74c_0_10)
 
