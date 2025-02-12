@@ -20,11 +20,31 @@ A `<div></div>` is a general type of HTML container. Other more semantically ric
 1. With an `id` >> `<div id="example-id-that-css-can-select"></div>`.
 2. With a `class` >> `<div class="example-class-that-could-apply-to-many-elements"></div>`
 
+In your CSS file, you can use the ID to select a specific HTML container like this:
+
+```
+/* CSS for Selecting by ID */
+#example-id-that-css-can-select {
+    background-color: blue;
+}
+```
+
+Alternatively, if you have a bunch of items that require the same styling and you use the `class` tag, you can select and style those like this:
+
+```
+/* CSS for Selecting by Class */
+.example-class-that-could-apply-to-many-elements {
+    background-color: blue;
+}
+```
+
 There are *many* different attributes, many specific to the unique type of element. See the MDN Web [docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
 
 ## Layout
+CSS allows us to both style individual elements, groups of elements, and determine their layout on the page. There are three general approaches to be aware of: (1) standard document flow (e.g. the order of your HTML), (2) Flexbox (e.g. think of putting elements in a row or column with optional wrapping), and (3) Grid (e.g. when you want to divide a screen into a grid of boxes to place elements in. Demos of each are below.
 
-### Standard Document Flow
+
+## Standard Document Flow
 Elements will be positioned in the order that they are presented in the HTML document. There are two types of HTML elements: block and inline. 
 Block elements will create a new line for each new element and with span the entire width of the page. An example of this type are lists, .e.g. `<ol> <li> </ol>`. See here for more on [lists](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul).
 Inline elements are elements that do not create a new row. These include `<span>`, `<img>`, `<button>`, and many others.
@@ -74,3 +94,7 @@ There are many different units of measuring for controlling size and positioning
 || `lh` | Value of the element's line-height | Vertical rhythm in typography |
 | **Grid** ||||
 || `fr` | Fractional unit for distributing space in CSS Grid | Grid layouts with proportional columns/rows |
+
+
+Because web browsers function across many types of devices (mobile phones, tablets, desktops, giant wall monitors), we want our geovisualizations to work across each of these types as well. This is called responsive web design. This is what we discuss briefly next.
+
