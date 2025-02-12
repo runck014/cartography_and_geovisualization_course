@@ -31,6 +31,9 @@ In order to create responsive designs, you in essence create a separate set of C
 }
 ```
 
+Because CSS "cascades", you should place your media queries at the end of your files always otherwise, it won't overwrite the base styles.
+
+
 ## Breakpoints
 In the above example, we mix `max-width` and `min-width`. Web designers use "mobile-first" to describe `min-width` as your starting point, whereas `tradition` or `desktop-first` uses `max-width`.
 
