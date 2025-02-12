@@ -1,0 +1,61 @@
+* {
+    outline: 1px solid black; /* Outline all content */
+}
+
+ul {
+    list-style-type: none; /* Remove Bullets */
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header h1 {
+    text-align: left;
+}
+
+#kpi-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.kpi {
+    flex: 1;
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+#graph1 {
+    grid-column: 2 / 3;
+}
+
+#graph2 {
+    grid-column: 2 / 3;
+}
+
+#graph3 {
+    grid-column: 2 / 3;
+}
+
+footer {
+    text-align: center;
+}
