@@ -64,6 +64,7 @@ By the end of this course, students will be able to:
 - Class Plan
   - Welcome / questions
   - Share HTML and CSS layouts vis and code
+  - Analyze code from `01_styled_dashboard`
   - Demonstrate Javascript and loading packages with npm
   - Demonstrate SVG elements with D3
   - Styling D3 maps and charts
