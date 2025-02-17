@@ -60,3 +60,11 @@ By the end of this course, students will be able to:
 - Assignment: Use HTML and CSS to create a layout of your project. It won't be styled and should only have placeholders for content.
 - Document Object Model Demo from Class [link](https://docs.google.com/presentation/d/1uL1-dxaG9dcUDj28DshVLnWtGbRRoxugbnfdiIvbADA/edit#slide=id.g33444e3d74c_0_10)
 
+# Week 5
+- Class Plan
+  - Welcome / questions
+  - Share HTML and CSS layouts vis and code
+  - Demonstrate Javascript and loading packages with npm
+  - Demonstrate SVG elements with D3
+  - Styling D3 maps and charts
+- Assignment: Add your basic map and graph elements to your dashboard by next class period. We will do a code review during class and discuss how to improve styling.
