@@ -65,7 +65,7 @@ By the end of this course, students will be able to:
   - Welcome / questions
   - Share HTML and CSS layouts vis and code
   - Analyze code from `01_styled_dashboard`
-  - Demonstrate Javascript and loading packages with npm
+  - Demonstrate Javascript DOM selection/manipulation, and loading packages with npm
   - Demonstrate SVG elements with D3
   - Styling D3 maps and charts
 - Assignment: Add your basic map and graph elements to your dashboard by next class period. We will do a code review during class and discuss how to improve styling.
