@@ -123,3 +123,20 @@ This section contains styles for the cards, chart titles, and the map container.
     height: 100%;
     width: 100%;
 }
+
+.line-chart-path {
+    fill: none;
+    stroke: rgb(67, 79, 88);
+    stroke-width: 1.5;
+}
+
+.chart-title {
+    padding: 0.5rem;
+}
+
+#lineChart {
+    width: 100%;
+    height: calc(100% - 2rem); /* Subtract space for title and padding */
+    padding-bottom: 0.2rem;
+    box-sizing: border-box;
+}

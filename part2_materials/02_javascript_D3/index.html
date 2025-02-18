@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,37 +12,18 @@
             <!-- Stats Row -->
             <div class="stats-row">
                 <div class="card">
-                    <div class="stat-card-title">Total Users</div>
+                    <div class="stat-card-title">Summary Card 1</div>
                     <div class="stat-card-value">1,234</div>
                 </div>
                 <div class="card">
-                    <div class="stat-card-title">Active Sessions</div>
+                    <div class="stat-card-title">Summary Stat 2</div>
                     <div class="stat-card-value">423</div>
                 </div>
                 <div class="card">
-                    <div class="stat-card-title">Revenue</div>
-                    <div class="stat-card-value">$12,345</div>
+                    <div class="stat-card-title">Summary Card 3</div>
+                    <div class="stat-card-value">12,345</div>
                 </div>
             </div>
-
-
-            <!-- 
-            In the following, you'll see the use of the <canvas> element.
-            The <canvas> element is used to draw graphics on a web page using JavaScript.
-            It provides a blank slate for rendering 2D and 3D graphics, animations, and interactive visuals.
-            The element itself does not provide drawing functionalities; instead, JavaScript is used
-            to access and manipulate the drawing context (e.g., 2D or WebGL).
-            Example usage:
-
-            <canvas id="myCanvas" width="500" height="300"></canvas>
-
-            To draw on the canvas, use JavaScript:
-
-            const canvas = document.getElementById('myCanvas');
-            const ctx = canvas.getContext('2d');
-            ctx.fillStyle = 'blue';
-            ctx.fillRect(50, 50, 100, 100); // Draws a blue rectangle.
-            -->
 
             <!-- Map Section -->
             <div class="map-container card">
@@ -54,17 +34,18 @@
             <!-- Line Chart -->
             <div class="line-chart-container card">
                 <div class="chart-title">Trend Analysis</div>
-                <div id="lineChart">
-                </div>
+                <div id="lineChart"></div>
             </div>
 
             <!-- Bar Chart -->
             <div class="bar-chart-container card">
                 <div class="chart-title">Category Breakdown</div>
-                <div id="barChart">
-                </div>
+                <div id="barChart"></div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

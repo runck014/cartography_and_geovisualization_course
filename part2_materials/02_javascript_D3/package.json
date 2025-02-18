@@ -1,0 +1,14 @@
+{
+  "name": "02_javascript_d3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vite": "^6.1.0"
+  }
+}
