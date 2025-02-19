@@ -1,6 +1,6 @@
 # API Calls with JavaScript
 
-We'll look at three examples. The first is using the async/await syntax. This is the newest approach and provides a wrapper around the second, older promises approach relying on .then() chaining. The third approach will be using third party packages, namely ArcGIS JavaScript SDK and Leaflet.
+We'll look at three examples. The first is using the async/await syntax. This is the newest approach and provides a wrapper around the second, older promises approach relying on .then() chaining. The third approach will be using third party packages, namely ArcGIS JavaScript SDK and D3.
 
 Importantly, everything we'll consider here is intended to be executed in the browser. If you're working server-side, different approaches are available.
 
@@ -63,6 +63,19 @@ Similarly, call this function in your console. Note how it behaves differently. 
 ## Using Third Party Packages
 
 ### ArcGIS JavaScript SDK
+The ArcGIS JavaScript SDK provides 
 
-### Leaflet
 
+### D3
+D3 provides D3.json() which provides a wrapper for dataset access.
+```
+d3.json("https://api.weather.gov/stations?state=MN").then(function(data) {
+
+  
+  // Data is loaded and parsed
+  console.log(data);
+  // Create a map using the plotGeoJSONPoints function
+  plotGeoJSONPoints(data, "map");
+}
+);
+```
