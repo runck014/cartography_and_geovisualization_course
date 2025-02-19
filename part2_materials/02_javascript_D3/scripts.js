@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ...existing code...
+    // We target the "lineChart" div with this code
 
     // Line Chart Data
     const data = [
@@ -118,4 +118,3 @@ document.addEventListener('DOMContentLoaded', function() {
     .attr("font-size", "10px")
     .text(d => d);
 });
-
