@@ -1,6 +1,6 @@
-# Working with the DOM in Javascript
+ # Working with the DOM in Javascript
 
-There are three ways you can select elements in the DOM:
+There are four ways you can select elements in the DOM:
 1. Drill down from the document object using `document.body.children` traversal
 2. Using `getElementyById`
 3. Using `getElementsByClassName`

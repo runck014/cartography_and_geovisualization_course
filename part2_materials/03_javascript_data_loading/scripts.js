@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // ...existing code...
 
     // Line Chart Data
     const data = [
