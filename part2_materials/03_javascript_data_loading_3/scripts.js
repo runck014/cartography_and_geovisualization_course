@@ -10,7 +10,7 @@ require([
   WebMap, MapView, Home, Editor, LayerList, Legend, Zoom
 ) => {
 
-  // Create a map from the webmap id for "20241031_Demo_map" in ArcGIS Online
+  // Create a map from the webmap id in ArcGIS Online
   const webmap = new WebMap({
     portalItem: {
       id: "a53530f1272f46ffb1d8f01e222828ac"
@@ -52,11 +52,5 @@ require([
     } else {
       console.warn("Target layer not found!");
     }
-
-
-
-
-
-
   });
 });
