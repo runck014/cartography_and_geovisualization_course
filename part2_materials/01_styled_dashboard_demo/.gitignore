@@ -1,0 +1,73 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+.cache/
+.next/
+out/
+coverage/
+server/
+.temp/
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Testing
+jest.config.js
+jest.setup.js
+__tests__/
+__mocks__/
+coverage/
+*.snap
+
+# Linting and formatting
+.eslintcache
+.prettier/
+.prettier-cache/
+
+# Storybook
+.storybook/
+*.stories.*
+node_modules/.cache/
+
+# Miscellaneous
+.npm/
+.parcel-cache/
+.vercel/
+.netlify/
+functions/
+

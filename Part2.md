@@ -60,3 +60,12 @@ By the end of this course, students will be able to:
 - Assignment: Use HTML and CSS to create a layout of your project. It won't be styled and should only have placeholders for content.
 - Document Object Model Demo from Class [link](https://docs.google.com/presentation/d/1uL1-dxaG9dcUDj28DshVLnWtGbRRoxugbnfdiIvbADA/edit#slide=id.g33444e3d74c_0_10)
 
+# Week 5
+- Class Plan
+  - Welcome / questions / syllabus review
+  - Share HTML and CSS layouts vis and code
+  - Analyze code from `01_styled_dashboard`
+  - Demonstrate Javascript DOM selection/manipulation, and loading packages with npm from end of `00_intro_to_tech_stack.md` and '03_JavaScript_DOM_manipulation'
+  - Demonstrate targeting elements with D3 
+  - Coding time: add a map and graph to wireframe
+- Assignment: Add your basic map and graph elements to your dashboard by next class period. We will do a code review during class and discuss how to improve styling.

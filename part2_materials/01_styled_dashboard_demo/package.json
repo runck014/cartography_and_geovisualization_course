@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "vite": "^6.1.0"
+  },
+  "name": "01_styled_dashboard_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
