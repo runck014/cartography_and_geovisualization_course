@@ -32,25 +32,5 @@ require([
     webmap.layers.forEach((layer, index) => {
       console.log(`Layer Index: ${index}, Title: ${layer.title}, ID: ${layer.id}`);
     });
-
-    // Find the layer we're editing by title
-    const targetLayer = webmap.layers.find(layer => 
-      layer.title === "Winter Workshop Activity 1"  // Change to appropriate layer if using for another webapp or project
-    );
-
-    // Create editor, change settings to remove the ability to add or edit attachments
-    if (targetLayer) {
-      const editor = new Editor({
-        view: view,
-        layerInfos: [{
-          layer: targetLayer,
-          attachmentsOnUpdateEnabled: false,
-          attachmentsOnCreateEnabled: false
-        }]
-      });
-      view.ui.add(editor, "top-right");
-    } else {
-      console.warn("Target layer not found!");
-    }
   });
 });
