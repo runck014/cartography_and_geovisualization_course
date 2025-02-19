@@ -1,0 +1,14 @@
+{
+  "name": "03_javascript_data_loading",
+  "version": "1.0.0",
+  "main": "scripts.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "vite": "^6.1.1"
+  }
+}
