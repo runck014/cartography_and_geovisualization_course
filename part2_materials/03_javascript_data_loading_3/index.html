@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styling Demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- ArcGIS Styles -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+    <!-- ArcGIS JavaScript API -->
+    <script src="https://js.arcgis.com/4.29/"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="dashboard-title">Demonstration Dashboard</h1>
+        
+        <div class="dashboard-grid">
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="card">
+                    <div class="stat-card-title">Summary Card 1</div>
+                    <div class="stat-card-value">1,234</div>
+                </div>
+                <div class="card">
+                    <div class="stat-card-title">Summary Stat 2</div>
+                    <div class="stat-card-value">423</div>
+                </div>
+                <div class="card">
+                    <div class="stat-card-title">Summary Card 3</div>
+                    <div class="stat-card-value">12,345</div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-container card">
+                <div class="chart-title">Geographic Distribution</div>
+                <div id="map"></div>
+            </div>
+
+            <!-- Line Chart -->
+            <div class="line-chart-container card">
+                <div class="chart-title">Trend Analysis</div>
+                <div id="lineChart"></div>
+            </div>
+
+            <!-- Bar Chart -->
+            <div class="bar-chart-container card">
+                <div class="chart-title">Category Breakdown</div>
+                <div id="barChart"></div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -62,10 +62,10 @@ By the end of this course, students will be able to:
 
 # Week 5
 - Class Plan
-  - Welcome / questions
+  - Welcome / questions / syllabus review
   - Share HTML and CSS layouts vis and code
   - Analyze code from `01_styled_dashboard`
-  - Demonstrate Javascript DOM selection/manipulation, and loading packages with npm
-  - Demonstrate SVG elements with D3
-  - Styling D3 maps and charts
+  - Demonstrate Javascript DOM selection/manipulation, and loading packages with npm from end of `00_intro_to_tech_stack.md` and '03_JavaScript_DOM_manipulation'
+  - Demonstrate targeting elements with D3 
+  - Coding time: add a map and graph to wireframe
 - Assignment: Add your basic map and graph elements to your dashboard by next class period. We will do a code review during class and discuss how to improve styling.
