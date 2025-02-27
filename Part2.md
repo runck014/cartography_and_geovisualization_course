@@ -69,3 +69,9 @@ By the end of this course, students will be able to:
   - Demonstrate targeting elements with D3 
   - Coding time: add a map and graph to wireframe
 - Assignment: Add your basic map and graph elements to your dashboard by next class period. We will do a code review during class and discuss how to improve styling.
+
+
+# Week 6
+- Class Plan
+  - Welcome / questions
+  - Geovis + code reviews (teams of 2; then with class)
