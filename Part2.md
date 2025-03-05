@@ -75,3 +75,11 @@ By the end of this course, students will be able to:
 - Class Plan
   - Welcome / questions
   - Geovis + code reviews (teams of 2; then with class)
+ 
+# Week 7
+- Class Plan
+  - Welcome / questions
+  - Project updates
+  - Demos:
+    - '03_javascript_npm_esri_d3_conflict_resolved/' -- using npm to install dependencies, not script imports in HTML
+    - '04_synced_maps'
