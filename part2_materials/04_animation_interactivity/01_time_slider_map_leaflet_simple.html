@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Filtered Map with D3 and Leaflet</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .controls {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+        
+        .slider-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        #time-slider {
+            width: 100%;
+            margin: 10px 0;
+        }
+        
+        .time-label {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .slider-value {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .legend {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time-Filtered Map Visualization</h1>
+        
+        <div class="controls">
+            <h3>Filter Data by Time</h3>
+            <div class="slider-container">
+                <div class="slider-value">Selected Date: <span id="date-display">2023-01-01</span></div>
+                <input type="range" id="time-slider" min="0" max="11" value="0" step="1">
+                <div class="time-label">
+                    <span>Jan 2023</span>
+                    <span>Dec 2023</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([37.8, -96], 4);
+        
+        // Add base map layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        // Sample data - array of points with location and time information
+        // In a real application, you would load this from an external source
+        const sampleData = [
+            // Format: [latitude, longitude, name, value, month (0-11)]
+            [40.7128, -74.0060, "New York", 25, 0],  // January
+            [34.0522, -118.2437, "Los Angeles", 30, 0],
+            [41.8781, -87.6298, "Chicago", 15, 0],
+            [37.7749, -122.4194, "San Francisco", 22, 1],  // February
+            [39.9526, -75.1652, "Philadelphia", 18, 1],
+            [29.7604, -95.3698, "Houston", 28, 2],  // March
+            [33.4484, -112.0740, "Phoenix", 35, 2],
+            [39.7392, -104.9903, "Denver", 20, 3],  // April
+            [47.6062, -122.3321, "Seattle", 17, 3],
+            [42.3601, -71.0589, "Boston", 23, 4],  // May
+            [32.7767, -96.7970, "Dallas", 31, 4],
+            [36.1627, -86.7816, "Nashville", 24, 5],  // June
+            [39.2904, -76.6122, "Baltimore", 19, 5],
+            [38.9072, -77.0369, "Washington DC", 26, 6],  // July
+            [35.2271, -80.8431, "Charlotte", 21, 6],
+            [25.7617, -80.1918, "Miami", 33, 7],  // August
+            [30.2672, -97.7431, "Austin", 29, 7],
+            [32.7157, -117.1611, "San Diego", 27, 8],  // September
+            [35.1495, -90.0490, "Memphis", 18, 8],
+            [43.0389, -87.9065, "Milwaukee", 16, 9],  // October
+            [35.4676, -97.5164, "Oklahoma City", 22, 9],
+            [44.9778, -93.2650, "Minneapolis", 14, 10],  // November
+            [33.7490, -84.3880, "Atlanta", 25, 10],
+            [36.1699, -115.1398, "Las Vegas", 32, 11],  // December
+            [45.5051, -122.6750, "Portland", 19, 11]
+        ];
+        
+        // Color scale for point values
+        const colorScale = d3.scaleSequential()
+            .domain([10, 40])
+            .interpolator(d3.interpolateViridis);
+        
+        // Create an object to store markers by month
+        const markersById = {};
+        const markersByMonth = Array.from({ length: 12 }, () => []);
+        
+        // Create markers for each data point
+        sampleData.forEach((point, i) => {
+            const [lat, lng, name, value, month] = point;
+            
+            // Create marker with custom style
+            const marker = L.circleMarker([lat, lng], {
+                radius: Math.max(5, value / 2),
+                fillColor: colorScale(value),
+                color: '#fff',
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+            
+            // Add popup
+            marker.bindPopup(`
+                <strong>${name}</strong><br>
+                Value: ${value}<br>
+                Month: ${new Date(2023, month, 1).toLocaleString('default', { month: 'long' })}
+            `);
+            
+            // Store marker
+            markersById[i] = marker;
+            markersByMonth[month].push(marker);
+        });
+        
+        // Create legend
+        const legend = L.control({ position: 'bottomright' });
+        legend.onAdd = function() {
+            const div = L.DomUtil.create('div', 'legend');
+            const values = [10, 20, 30, 40];
+            
+            div.innerHTML = '<h4>Value</h4>';
+            
+            values.forEach(value => {
+                div.innerHTML += `
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: ${colorScale(value)}"></div>
+                        <span>${value}</span>
+                    </div>
+                `;
+            });
+            
+            return div;
+        };
+        legend.addTo(map);
+        
+        // Time slider functionality
+        const timeSlider = document.getElementById('time-slider');
+        const dateDisplay = document.getElementById('date-display');
+        
+        // Function to update map based on selected month
+        function updateMap(monthIndex) {
+            // Clear all markers
+            Object.values(markersById).forEach(marker => {
+                if (map.hasLayer(marker)) {
+                    map.removeLayer(marker);
+                }
+            });
+            
+            // Add markers for the selected month
+            markersByMonth[monthIndex].forEach(marker => {
+                marker.addTo(map);
+            });
+            
+            // Update date display
+            const selectedDate = new Date(2023, monthIndex, 1);
+            dateDisplay.textContent = selectedDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+        }
+        
+        // Initial map update
+        updateMap(0);
+        
+        // Listen for slider changes
+        timeSlider.addEventListener('input', function() {
+            updateMap(parseInt(this.value));
+        });
+    </script>
+</body>
+</html>

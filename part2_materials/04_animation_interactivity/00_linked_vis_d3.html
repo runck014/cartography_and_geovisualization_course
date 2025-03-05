@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked Graphs with D3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .chart-container {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+        
+        h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .tooltip {
+            position: absolute;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Interactive Linked Visualizations with D3.js</h2>
+    <p>Click on any point in the scatter plot to update the bar chart.</p>
+    
+    <div class="chart-container">
+        <h3>Scatter Plot</h3>
+        <svg id="scatterPlot" width="400" height="300"></svg>
+    </div>
+    
+    <div class="chart-container">
+        <h3>Bar Chart</h3>
+        <svg id="barChart" width="400" height="300"></svg>
+    </div>
+    
+    <script>
+        // =============================================
+        // DATA INITIALIZATION
+        // =============================================
+        
+        // Sample dataset
+        const data = [
+            { id: 1, x: 10, y: 20, value: 30, label: "Point A" },
+            { id: 2, x: 40, y: 50, value: 80, label: "Point B" },
+            { id: 3, x: 70, y: 30, value: 50, label: "Point C" },
+            { id: 4, x: 100, y: 80, value: 100, label: "Point D" }
+        ];
+        
+        // =============================================
+        // SCATTER PLOT CONFIGURATION
+        // =============================================
+        
+        // Set up dimensions and margins
+        const scatterMargin = { top: 20, right: 20, bottom: 40, left: 40 };
+        const scatterWidth = 400 - scatterMargin.left - scatterMargin.right;
+        const scatterHeight = 300 - scatterMargin.top - scatterMargin.bottom;
+        
+        // Create the SVG container with proper margins
+        const scatterSvg = d3.select("#scatterPlot");
+        const scatterG = scatterSvg.append("g")
+            .attr("transform", `translate(${scatterMargin.left},${scatterMargin.top})`);
+        
+        // Set up scales
+        const xScale = d3.scaleLinear()
+            .domain([0, 110])  // Data range
+            .range([0, scatterWidth]);  // Pixel range
+        
+        const yScale = d3.scaleLinear()
+            .domain([0, 100])
+            .range([scatterHeight, 0]);  // Note: y-axis is inverted in SVG
+        
+        // Create and add x-axis
+        scatterG.append("g")
+            .attr("transform", `translate(0,${scatterHeight})`)
+            .call(d3.axisBottom(xScale))
+            .append("text")
+            .attr("x", scatterWidth / 2)
+            .attr("y", 30)
+            .attr("fill", "black")
+            .text("X Value");
+        
+        // Create and add y-axis
+        scatterG.append("g")
+            .call(d3.axisLeft(yScale))
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -30)
+            .attr("x", -scatterHeight / 2)
+            .attr("fill", "black")
+            .attr("text-anchor", "middle")
+            .text("Y Value");
+        
+        // Create tooltip div
+        const tooltip = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+        
+        // =============================================
+        // BAR CHART CONFIGURATION
+        // =============================================
+        
+        // Set up dimensions and margins
+        const barMargin = { top: 20, right: 20, bottom: 40, left: 40 };
+        const barWidth = 400 - barMargin.left - barMargin.right;
+        const barHeight = 300 - barMargin.top - barMargin.bottom;
+        
+        // Create the SVG container with proper margins
+        const barSvg = d3.select("#barChart");
+        const barG = barSvg.append("g")
+            .attr("transform", `translate(${barMargin.left},${barMargin.top})`);
+        
+        // Set up scales
+        const barXScale = d3.scaleBand()
+            .domain(["Value"])
+            .range([0, barWidth])
+            .padding(0.4);
+        
+        const barYScale = d3.scaleLinear()
+            .domain([0, 100])
+            .range([barHeight, 0]);
+        
+        // Create and add x-axis
+        barG.append("g")
+            .attr("transform", `translate(0,${barHeight})`)
+            .call(d3.axisBottom(barXScale));
+        
+        // Create and add y-axis
+        barG.append("g")
+            .call(d3.axisLeft(barYScale))
+            .append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("y", -30)
+            .attr("x", -barHeight / 2)
+            .attr("fill", "black")
+            .attr("text-anchor", "middle")
+            .text("Value");
+        
+        // Add title to the bar chart
+        barG.append("text")
+            .attr("id", "barTitle")
+            .attr("x", barWidth / 2)
+            .attr("y", -5)
+            .attr("text-anchor", "middle")
+            .text("Click a point to see its value");
+        
+        // =============================================
+        // DRAW THE SCATTER PLOT POINTS
+        // =============================================
+        
+        scatterG.selectAll("circle")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx", d => xScale(d.x))
+            .attr("cy", d => yScale(d.y))
+            .attr("r", 6)
+            .attr("fill", "steelblue")
+            .attr("stroke", "white")
+            .attr("stroke-width", 1.5)
+            .attr("opacity", 0.8)
+            .on("mouseover", function(event, d) {
+                // Highlight the point
+                d3.select(this)
+                    .attr("r", 9)
+                    .attr("opacity", 1);
+                
+                // Show tooltip
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", 0.9);
+                tooltip.html(`<strong>${d.label}</strong><br>x: ${d.x}, y: ${d.y}<br>value: ${d.value}`)
+                    .style("left", (event.pageX + 10) + "px")
+                    .style("top", (event.pageY - 28) + "px");
+            })
+            .on("mouseout", function() {
+                // Restore original appearance
+                d3.select(this)
+                    .attr("r", 6)
+                    .attr("opacity", 0.8);
+                
+                // Hide tooltip
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            })
+            .on("click", function(event, d) {
+                // Highlight selected point
+                scatterG.selectAll("circle")
+                    .attr("fill", "steelblue");
+                d3.select(this)
+                    .attr("fill", "orange");
+                
+                // Update the bar chart with the selected data
+                updateBarChart(d);
+            });
+        
+        // =============================================
+        // FUNCTION TO UPDATE BAR CHART
+        // =============================================
+        
+        function updateBarChart(selectedData) {
+            // Update the bar chart title
+            d3.select("#barTitle")
+                .text(`Value for ${selectedData.label}`);
+            
+            // Data join for bars
+            const bars = barG.selectAll("rect")
+                .data([selectedData]);
+            
+            // Enter + update pattern
+            bars.enter()
+                .append("rect")
+                .merge(bars)
+                .transition()
+                .duration(750)
+                .attr("x", barXScale("Value"))
+                .attr("y", d => barYScale(d.value))
+                .attr("width", barXScale.bandwidth())
+                .attr("height", d => barHeight - barYScale(d.value))
+                .attr("fill", "orange");
+            
+            // Remove any extra bars
+            bars.exit().remove();
+            
+            // Add value label
+            const valueLabels = barG.selectAll(".value-label")
+                .data([selectedData]);
+            
+            valueLabels.enter()
+                .append("text")
+                .attr("class", "value-label")
+                .merge(valueLabels)
+                .transition()
+                .duration(750)
+                .attr("x", barXScale("Value") + barXScale.bandwidth() / 2)
+                .attr("y", d => barYScale(d.value) - 5)
+                .attr("text-anchor", "middle")
+                .text(d => d.value);
+            
+            valueLabels.exit().remove();
+        }
+        
+        // Initialize bar chart with first data point
+        updateBarChart(data[0]);
+    </script>
+</body>
+</html>

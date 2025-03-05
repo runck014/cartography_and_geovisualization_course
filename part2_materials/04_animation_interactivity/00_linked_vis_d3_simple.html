@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked Graphs with D3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <h3>Scatter Plot (Click a Point)</h3>
+    <svg id="scatterPlot" width="400" height="300"></svg>
+
+    <h3>Bar Chart (Updates on Selection)</h3>
+    <svg id="barChart" width="400" height="300"></svg>
+
+    <script>
+        // Sample data
+        const data = [
+            { id: 1, x: 10, y: 20, value: 30 },
+            { id: 2, x: 40, y: 50, value: 80 },
+            { id: 3, x: 70, y: 30, value: 50 },
+            { id: 4, x: 100, y: 80, value: 100 }
+        ];
+
+        // Scatter plot setup
+        const scatterSvg = d3.select("#scatterPlot");
+        const scatterMargin = { top: 20, right: 20, bottom: 40, left: 40 };
+        const scatterWidth = 400 - scatterMargin.left - scatterMargin.right;
+        const scatterHeight = 300 - scatterMargin.top - scatterMargin.bottom;
+        
+        const scatterG = scatterSvg.append("g")
+            .attr("transform", `translate(${scatterMargin.left},${scatterMargin.top})`);
+
+        // Scales for scatter plot
+        const xScale = d3.scaleLinear().domain([0, 110]).range([0, scatterWidth]);
+        const yScale = d3.scaleLinear().domain([0, 100]).range([scatterHeight, 0]);
+
+        // Draw scatter plot points
+        scatterG.selectAll("circle")
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx", d => xScale(d.x))
+            .attr("cy", d => yScale(d.y))
+            .attr("r", 6)
+            .attr("fill", "steelblue")
+            .on("click", function (event, d) {
+                updateBarChart(d);
+            });
+
+        // Scatter plot axes
+        scatterG.append("g").attr("transform", `translate(0,${scatterHeight})`).call(d3.axisBottom(xScale));
+        scatterG.append("g").call(d3.axisLeft(yScale));
+
+        // Bar chart setup
+        const barSvg = d3.select("#barChart");
+        const barMargin = { top: 20, right: 20, bottom: 40, left: 40 };
+        const barWidth = 400 - barMargin.left - barMargin.right;
+        const barHeight = 300 - barMargin.top - barMargin.bottom;
+
+        const barG = barSvg.append("g")
+            .attr("transform", `translate(${barMargin.left},${barMargin.top})`);
+
+        const barXScale = d3.scaleBand().domain(["Value"]).range([0, barWidth]).padding(0.4);
+        const barYScale = d3.scaleLinear().domain([0, 100]).range([barHeight, 0]);
+
+        barG.append("g").attr("transform", `translate(0,${barHeight})`).call(d3.axisBottom(barXScale));
+        barG.append("g").call(d3.axisLeft(barYScale));
+
+        // Function to update bar chart
+        function updateBarChart(selectedData) {
+            const bars = barG.selectAll("rect").data([selectedData]);
+
+            bars.enter()
+                .append("rect")
+                .merge(bars)
+                .attr("x", d => barXScale("Value"))
+                .attr("y", d => barYScale(d.value))
+                .attr("width", barXScale.bandwidth())
+                .attr("height", d => barHeight - barYScale(d.value))
+                .attr("fill", "orange");
+
+            bars.exit().remove();
+        }
+    </script>
+</body>
+</html>
