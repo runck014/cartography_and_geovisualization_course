@@ -80,6 +80,13 @@ By the end of this course, students will be able to:
 - Class Plan
   - Welcome / questions
   - Project updates
-  - Demos:
+  - Demos and Activities:
     - '03_javascript_npm_esri_d3_conflict_resolved/' -- using npm to install dependencies, not script imports in HTML
-    - '04_synced_maps'
+    - '04_animation_interactivity'
+      - **Activity**: This folder contains mixed HTML, CSS, and JavaScript code. Each group should:
+        - Setup the code as a correctly structured project running on a local webserver
+        - Analyze the code and add detailed comments on what each line of code is doing
+        - Provide a longform description of how interactivity or animation is implemented.
+        - Break the code so that animation or interactivity doesn't work.
+        - Update the code so it changes one aspect of the animation or interactivity.
+- Assignment: Be prepared for Project 1 presentation and review after spring break.
