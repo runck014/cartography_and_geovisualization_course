@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .instructions {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSV File Reader</h1>
+    
+    <div class="instructions">
+        <p><strong>Instructions:</strong></p>
+        <p>
+            1. Create a file named <code>data.csv</code> and place it on your server in the same directory as this HTML file.<br>
+            2. Open the browser console (F12 or right-click and select "Inspect", then navigate to "Console") to see the CSV data printed line by line.
+        </p>
+    </div>
+    
+    <div id="status" class="status"></div>
+    
+    <h2>CSV Data Preview:</h2>
+    <pre id="preview"></pre>
+    
+    <script>
+        // Wait for the DOM to load
+        document.addEventListener('DOMContentLoaded', function() {
+            const statusDiv = document.getElementById('status');
+            const previewElement = document.getElementById('preview');
+            
+            // Function to fetch and process the CSV file
+            async function loadCSV() {
+                try {
+                    // Fetch the CSV file from the server
+                    const response = await fetch('data.csv');
+                    
+                    if (!response.ok) {
+                        throw new Error(`Failed to load CSV file: ${response.status} ${response.statusText}`);
+                    }
+                    
+                    // Get the text content of the CSV file
+                    const csvText = await response.text();
+                    
+                    // Split the CSV text into lines
+                    const lines = csvText.split(/\r?\n/);
+                    
+                    // Print each line to the console
+                    console.log('CSV file loaded successfully. Printing lines:');
+                    lines.forEach((line, index) => {
+                        if (line.trim() !== '') {
+                            console.log(`Line ${index + 1}:`, line);
+                        }
+                    });
+                    
+                    // Update the status and preview on the page
+                    statusDiv.className = 'status success';
+                    statusDiv.textContent = 'CSV file loaded successfully! Check the console for the complete output.';
+                    
+                    // Show a preview of the data (first 10 lines)
+                    const previewLines = lines.filter(line => line.trim() !== '').slice(0, 10);
+                    previewElement.textContent = previewLines.join('\n');
+                    
+                    if (lines.length > 10) {
+                        previewElement.textContent += '\n...';
+                    }
+                    
+                } catch (error) {
+                    console.error('Error loading CSV file:', error);
+                    statusDiv.className = 'status error';
+                    statusDiv.textContent = `Error: ${error.message}. Make sure a file named "data.csv" exists in the same directory as this HTML file.`;
+                }
+            }
+            
+            // Call the function to load the CSV
+            loadCSV();
+        });
+    </script>
+</body>
+</html>
