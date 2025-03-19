@@ -90,3 +90,5 @@ By the end of this course, students will be able to:
         - Break the code so that animation or interactivity doesn't work.
         - Update the code so it changes one aspect of the animation or interactivity.
 - Assignment: Be prepared for Project 1 presentation and review after spring break.
+
+# Week 9: Project Presentations
