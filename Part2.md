@@ -102,7 +102,7 @@ By the end of this course, students will be able to:
     - Focus on REACT this week
     - Replace theory with converting Project 1 to REACT
   - Lecture
-    - Hello world react '05_react_hello_world'
-    - Components '05_react_components'
+    - Hello world react `05_react_hello_world`
+    - Components `05_react_components`
     - In class activity: convert dashboard '01_styled_dashboard_demo' into react app with components
 - Assignment: refactor your app from vanilla javascript, html, and css into a react app using the template.
