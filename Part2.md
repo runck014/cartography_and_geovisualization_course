@@ -91,4 +91,18 @@ By the end of this course, students will be able to:
         - Update the code so it changes one aspect of the animation or interactivity.
 - Assignment: Be prepared for Project 1 presentation and review after spring break.
 
+# Week 8: Spring Break
+
 # Week 9: Project Presentations
+
+# Week 10: Modern Approaches to Layout
+- Class Plan
+  - Welcome / questions
+  - Update on schedule
+    - Focus on REACT this week
+    - Replace theory with converting Project 1 to REACT
+  - Lecture
+    - Hello world react '05_react_hello_world'
+    - Components '05_react_components'
+    - In class activity: convert dashboard '01_styled_dashboard_demo' into react app with components
+- Assignment: refactor your app from vanilla javascript, html, and css into a react app using the template.
