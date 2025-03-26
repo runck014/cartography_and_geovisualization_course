@@ -1,0 +1,40 @@
+.statistics-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-icon {
+    background-color: #e6f7ff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    color: #1890ff;
+    font-size: 24px;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-title {
+    margin: 0;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  
+  .card-value {
+    margin: 5px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #262626;
+  }
