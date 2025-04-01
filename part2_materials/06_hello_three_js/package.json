@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "vite": "^6.2.4"
+  },
+  "name": "06_hello_three_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.25.2",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.5.3",
+    "rollup": "^4.38.0",
+    "source-map-js": "^1.2.1",
+    "three": "^0.175.0"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
