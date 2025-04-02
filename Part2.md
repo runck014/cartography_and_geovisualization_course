@@ -106,3 +106,14 @@ By the end of this course, students will be able to:
     - Components `05_react_components`
     - In class activity: convert dashboard '01_styled_dashboard_demo' into react app with components
 - Assignment: refactor your app from vanilla javascript, html, and css into a react app using the template.
+
+# Week 11: Geovisualization in 3D with Three.js and D3
+- Class Plan
+  - Welcome / questions
+  - Report back on assignement
+  - Lecture
+    - The core elements of Three JS and 3D GeoVis -- `06_hello_three_js`
+    - Hacking 3d Hello in groups
+    - Building a 3D globe and adding points -- `06_3d_globe_three_js`
+    - Hacking the digital globe
+  - Next time: come to class with your presentation and proposal for your 3D project. See `project_proposal_guidelines.md` and `inspiration_presentation_assignement.md` for details of what your presentation should cover.
