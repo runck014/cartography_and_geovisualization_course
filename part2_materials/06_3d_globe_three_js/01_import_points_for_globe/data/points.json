@@ -1,0 +1,1016 @@
+[
+    {
+     "name": "Les Bolstad, U of M Golf Course",
+     "lat": 44.99854299,
+     "lon": -93.18875303,
+     "value": 7.1
+    },
+    {
+     "name": "Rush Creek Golf Club",
+     "lat": 45.097954,
+     "lon": -93.51760401,
+     "value": 4.9
+    },
+    {
+     "name": "Southwood Golf and Country Club",
+     "lat": 49.7587722,
+     "lon": -97.16178208,
+     "value": 7.0
+    },
+    {
+     "name": "TPC Deere Run",
+     "lat": 41.47927882,
+     "lon": -90.39326472,
+     "value": 1.6
+    },
+    {
+     "name": "Tedesco CC",
+     "lat": 42.21943224,
+     "lon": -70.88272045,
+     "value": 1.6
+    },
+    {
+     "name": "Keller GC",
+     "lat": 45.00229734,
+     "lon": -93.05466528,
+     "value": 4.2
+    },
+    {
+     "name": "Treetops Resort",
+     "lat": 45.01415807,
+     "lon": -84.77518482,
+     "value": 7.2
+    },
+    {
+     "name": "The Northern Michigan University Golf Course",
+     "lat": 46.48493559,
+     "lon": -87.29477686,
+     "value": 6.7
+    },
+    {
+     "name": "The Country Club of Scranton",
+     "lat": 41.47946219,
+     "lon": -75.71646293,
+     "value": 4.8
+    },
+    {
+     "name": "Prestwick Village Golf Club",
+     "lat": 42.6356,
+     "lon": -83.64094,
+     "value": 7.1
+    },
+    {
+     "name": "whitetail golf club",
+     "lat": 44.90822896,
+     "lon": -116.1378034,
+     "value": 8.7
+    },
+    {
+     "name": "Valleywood Golf Course",
+     "lat": 44.771651,
+     "lon": -93.15903296,
+     "value": 9.3
+    },
+    {
+     "name": "Fairview Country Club",
+     "lat": 41.06700559,
+     "lon": -73.6876603,
+     "value": 4.8
+    },
+    {
+     "name": "Fox Hollow Golf Club",
+     "lat": 45.22159185,
+     "lon": -93.5789346,
+     "value": 6.1
+    },
+    {
+     "name": "Waverly Municipal Golf Course",
+     "lat": 42.72133421,
+     "lon": -92.48188675,
+     "value": 5.3
+    },
+    {
+     "name": "Legends Club",
+     "lat": 44.67001275,
+     "lon": -93.343371,
+     "value": 9.3
+    },
+    {
+     "name": "Silver Bay Golf Course",
+     "lat": 47.27614736,
+     "lon": -91.31517185,
+     "value": 1.3
+    },
+    {
+     "name": "Willow Creek Golf and Events",
+     "lat": 43.94934589,
+     "lon": -92.48411587,
+     "value": 8.9
+    },
+    {
+     "name": "St. Laurence Golf Oy",
+     "lat": 60.2207435,
+     "lon": 24.05353087,
+     "value": 9.7
+    },
+    {
+     "name": "Kragero resort",
+     "lat": 58.84871438,
+     "lon": 9.40782743,
+     "value": 4.2
+    },
+    {
+     "name": "Arcadia Bluffs",
+     "lat": 44.45698952,
+     "lon": -86.24562544,
+     "value": 2.3
+    },
+    {
+     "name": "Wausau Country Club",
+     "lat": 44.90512792,
+     "lon": -89.62004882,
+     "value": 4.5
+    },
+    {
+     "name": "Trondheim Golfklubb",
+     "lat": 63.39801285,
+     "lon": 10.24178982,
+     "value": 3.6
+    },
+    {
+     "name": "Luck Golf Course",
+     "lat": 45.56555158,
+     "lon": -92.4608902,
+     "value": 2.1
+    },
+    {
+     "name": "Royal Montreal Golf Club",
+     "lat": 45.49104275,
+     "lon": -73.89882857,
+     "value": 5.5
+    },
+    {
+     "name": "Mohawk Golf Club",
+     "lat": 42.79864868,
+     "lon": -73.89241599,
+     "value": 1.2
+    },
+    {
+     "name": "Hillsview golf course",
+     "lat": 44.34775107,
+     "lon": -100.2992947,
+     "value": 2.5
+    },
+    {
+     "name": "Blackhawk Country Club",
+     "lat": 43.07760414,
+     "lon": -89.45850415,
+     "value": 7.1
+    },
+    {
+     "name": "Hirsala Golf",
+     "lat": 60.11883666,
+     "lon": 24.52432695,
+     "value": 6.0
+    },
+    {
+     "name": "Owatonna Country Club",
+     "lat": 44.06609117,
+     "lon": -93.24754458,
+     "value": 1.1
+    },
+    {
+     "name": "Settlers Bay Golf Course",
+     "lat": 61.5102624,
+     "lon": -149.6123199,
+     "value": 8.9
+    },
+    {
+     "name": "Victory Links Golf Course",
+     "lat": 45.15734655,
+     "lon": -93.21986856,
+     "value": 9.6
+    },
+    {
+     "name": "Brackett's Crossing CC",
+     "lat": 44.69035559,
+     "lon": -93.3163054,
+     "value": 3.3
+    },
+    {
+     "name": "Golden Valley Country Club",
+     "lat": 44.98763902,
+     "lon": -93.36691198,
+     "value": 7.3
+    },
+    {
+     "name": "Quechee Country Cllub",
+     "lat": 43.65723,
+     "lon": -72.44051,
+     "value": 9.8
+    },
+    {
+     "name": "Logan Country Club",
+     "lat": 41.74429101,
+     "lon": -111.794677,
+     "value": 4.1
+    },
+    {
+     "name": "Ekwanok Country Club",
+     "lat": 43.15818678,
+     "lon": -73.06843022,
+     "value": 8.9
+    },
+    {
+     "name": "Country Club of Pittsfield",
+     "lat": 42.05638419,
+     "lon": -73.51526064,
+     "value": 4.4
+    },
+    {
+     "name": "Bel Acres Golf and Country Club",
+     "lat": 50.03564765,
+     "lon": -97.27822307,
+     "value": 3.0
+    },
+    {
+     "name": "Teugega Country Club",
+     "lat": 43.27193047,
+     "lon": -75.43642359,
+     "value": 3.3
+    },
+    {
+     "name": "Edina Country Club",
+     "lat": 44.91075299,
+     "lon": -93.34063404,
+     "value": 6.0
+    },
+    {
+     "name": "The Legacy Courses at Craguns",
+     "lat": 46.39122898,
+     "lon": -94.346778,
+     "value": 1.8
+    },
+    {
+     "name": "West Bend Country Club",
+     "lat": 43.40417798,
+     "lon": -88.23745177,
+     "value": 5.6
+    },
+    {
+     "name": "Dacotah ridge golf club",
+     "lat": 44.49472961,
+     "lon": -94.92693848,
+     "value": 9.4
+    },
+    {
+     "name": "Baker National Golf Course",
+     "lat": 45.03121,
+     "lon": -93.60710304,
+     "value": 3.9
+    },
+    {
+     "name": "Spring Lake Country Club",
+     "lat": 43.08468301,
+     "lon": -86.17603097,
+     "value": 9.9
+    },
+    {
+     "name": "Glen Oak Country Club",
+     "lat": 41.87598781,
+     "lon": -88.04319923,
+     "value": 8.8
+    },
+    {
+     "name": "Forest Lake Country Club",
+     "lat": 42.59724999,
+     "lon": -83.29730304,
+     "value": 1.7
+    },
+    {
+     "name": "Walloon Lake Country Club",
+     "lat": 45.28998566,
+     "lon": -84.95666308,
+     "value": 9.5
+    },
+    {
+     "name": "Akureyri Golf Club",
+     "lat": 65.66659653,
+     "lon": -18.11635775,
+     "value": 9.2
+    },
+    {
+     "name": "Andersons Creek Golf Club",
+     "lat": 46.448794,
+     "lon": -63.4364222,
+     "value": 2.0
+    },
+    {
+     "name": "Bell Nob Golf Course",
+     "lat": 44.28411012,
+     "lon": -105.563601,
+     "value": 2.5
+    },
+    {
+     "name": "Birnamwood Golf Course",
+     "lat": 44.77867071,
+     "lon": -93.25997633,
+     "value": 6.6
+    },
+    {
+     "name": "Brookfield country club",
+     "lat": 42.98436323,
+     "lon": -78.665681,
+     "value": 9.9
+    },
+    {
+     "name": "Burlington Golf Club",
+     "lat": 40.83377098,
+     "lon": -91.12208098,
+     "value": 3.6
+    },
+    {
+     "name": "Calgary Golf and Country Club",
+     "lat": 51.00866058,
+     "lon": -114.083242,
+     "value": 2.4
+    },
+    {
+     "name": "country club of lansing",
+     "lat": 42.71276252,
+     "lon": -84.57821626,
+     "value": 6.8
+    },
+    {
+     "name": "Crystal Downs Country Club",
+     "lat": 44.700817,
+     "lon": -86.238522,
+     "value": 3.8
+    },
+    {
+     "name": "Dragon's Fire Golf Club",
+     "lat": 43.38398745,
+     "lon": -79.95681955,
+     "value": 4.7
+    },
+    {
+     "name": "Dretzka Park Golf Course",
+     "lat": 43.16862972,
+     "lon": -88.05641694,
+     "value": 9.9
+    },
+    {
+     "name": "Edmonton  Country Club",
+     "lat": 53.49390998,
+     "lon": -113.60326,
+     "value": 5.2
+    },
+    {
+     "name": "El Dorado Golf Course",
+     "lat": 42.59928602,
+     "lon": -84.49253095,
+     "value": 4.2
+    },
+    {
+     "name": "Elcona Country Club",
+     "lat": 41.66815335,
+     "lon": -85.85470011,
+     "value": 4.8
+    },
+    {
+     "name": "Essex County Club",
+     "lat": 42.58468471,
+     "lon": -70.76325183,
+     "value": 7.1
+    },
+    {
+     "name": "Finkbine Golf Course-University of Iowa",
+     "lat": 41.6618006,
+     "lon": -91.56878984,
+     "value": 2.8
+    },
+    {
+     "name": "Franklin Hills Country Club",
+     "lat": 42.51962199,
+     "lon": -83.32334897,
+     "value": 6.3
+    },
+    {
+     "name": "Glendale Golf and Country Club",
+     "lat": 53.58148223,
+     "lon": -113.6710951,
+     "value": 7.0
+    },
+    {
+     "name": "Great Oaks Country Club",
+     "lat": 42.68701509,
+     "lon": -83.1508126,
+     "value": 1.8
+    },
+    {
+     "name": "hawks landing golf club",
+     "lat": 43.03815377,
+     "lon": -89.53382357,
+     "value": 5.3
+    },
+    {
+     "name": "HawksHead Links",
+     "lat": 42.45821931,
+     "lon": -86.22444287,
+     "value": 1.8
+    },
+    {
+     "name": "Hillview Golf Course",
+     "lat": 42.60890219,
+     "lon": -71.30048556,
+     "value": 9.3
+    },
+    {
+     "name": "Hirsch Creek Golf and Winter Club",
+     "lat": 54.07243611,
+     "lon": -128.6348529,
+     "value": 9.9
+    },
+    {
+     "name": "Homewood golf course",
+     "lat": 42.04369235,
+     "lon": -93.60757057,
+     "value": 7.1
+    },
+    {
+     "name": "Huron Meadows Metropark",
+     "lat": 42.49287634,
+     "lon": -83.77537572,
+     "value": 1.3
+    },
+    {
+     "name": "Hyperion Field CLub",
+     "lat": 41.69161751,
+     "lon": -93.70626626,
+     "value": 4.0
+    },
+    {
+     "name": "Interlachen Country Club",
+     "lat": 44.915572,
+     "lon": -93.38168399,
+     "value": 7.1
+    },
+    {
+     "name": "Ironwood Golf Course",
+     "lat": 40.54227238,
+     "lon": -88.96818175,
+     "value": 4.0
+    },
+    {
+     "name": "Keweenaw Mountain Lodge",
+     "lat": 47.4567658,
+     "lon": -87.91383764,
+     "value": 2.1
+    },
+    {
+     "name": "La Crosse Country Club",
+     "lat": 43.8858416,
+     "lon": -91.17611728,
+     "value": 1.2
+    },
+    {
+     "name": "Lake Breeze Golf Club",
+     "lat": 44.11952543,
+     "lon": -88.65615013,
+     "value": 3.9
+    },
+    {
+     "name": "Ledreborg Palace Golf Club",
+     "lat": 55.60696,
+     "lon": 11.94838,
+     "value": 9.2
+    },
+    {
+     "name": "Legend at Merrill Hills",
+     "lat": 42.98593789,
+     "lon": -88.29265123,
+     "value": 8.2
+    },
+    {
+     "name": "Leslie Park Golf course",
+     "lat": 42.309047,
+     "lon": -83.72338091,
+     "value": 7.2
+    },
+    {
+     "name": "Lochmoor Club",
+     "lat": 42.43719016,
+     "lon": -82.89427676,
+     "value": 3.6
+    },
+    {
+     "name": "London Hunt and Country Club",
+     "lat": 42.9746219,
+     "lon": -81.33871893,
+     "value": 1.1
+    },
+    {
+     "name": "Malone Golf Club",
+     "lat": 44.88600045,
+     "lon": -74.31366107,
+     "value": 4.2
+    },
+    {
+     "name": "Maquoketa Country Club",
+     "lat": 42.05747607,
+     "lon": -90.68868837,
+     "value": 3.1
+    },
+    {
+     "name": "Marquette Golf Club",
+     "lat": 46.53084339,
+     "lon": -87.42528944,
+     "value": 7.4
+    },
+    {
+     "name": "Martis Camp Club",
+     "lat": 39.28054899,
+     "lon": -120.1716808,
+     "value": 1.9
+    },
+    {
+     "name": "Meadowbrook Country Club",
+     "lat": 42.43570081,
+     "lon": -83.44576545,
+     "value": 7.1
+    },
+    {
+     "name": "Messil\u00e4 golf Oy",
+     "lat": 61.01210585,
+     "lon": 25.55542358,
+     "value": 5.0
+    },
+    {
+     "name": "Moccasin Creek CC",
+     "lat": 45.50608701,
+     "lon": -98.41739798,
+     "value": 6.2
+    },
+    {
+     "name": "Nemadji Golf Course",
+     "lat": 46.67182,
+     "lon": -92.07697,
+     "value": 8.0
+    },
+    {
+     "name": "Nordcenter golf & country club",
+     "lat": 60.08142362,
+     "lon": 23.55959135,
+     "value": 9.7
+    },
+    {
+     "name": "Northland County Club",
+     "lat": 46.82556202,
+     "lon": -92.04841899,
+     "value": 3.1
+    },
+    {
+     "name": "Oneida Golf and Country Club",
+     "lat": 44.54011384,
+     "lon": -88.11229219,
+     "value": 3.8
+    },
+    {
+     "name": "Phillips Park Golf Course",
+     "lat": 41.73693911,
+     "lon": -88.29048808,
+     "value": 8.2
+    },
+    {
+     "name": "Plumbrook Golf Club",
+     "lat": 42.57126688,
+     "lon": -82.99518375,
+     "value": 9.8
+    },
+    {
+     "name": "Rockwood Park Golf Course",
+     "lat": 45.31321862,
+     "lon": -66.06825458,
+     "value": 8.9
+    },
+    {
+     "name": "Rosedale Golf Club",
+     "lat": 43.73536999,
+     "lon": -79.39968001,
+     "value": 3.1
+    },
+    {
+     "name": "Saddle Rock GC",
+     "lat": 39.59445985,
+     "lon": -104.7359504,
+     "value": 5.1
+    },
+    {
+     "name": "Sand Valley Resort",
+     "lat": 44.16991323,
+     "lon": -89.85667728,
+     "value": 3.2
+    },
+    {
+     "name": "Spencer Municipal Golf Course",
+     "lat": 43.12362239,
+     "lon": -95.14953871,
+     "value": 8.9
+    },
+    {
+     "name": "St. Cloud Country Club",
+     "lat": 45.51711289,
+     "lon": -94.14443091,
+     "value": 2.4
+    },
+    {
+     "name": "St. Croix National Golf Course",
+     "lat": 45.09823872,
+     "lon": -92.72315099,
+     "value": 3.2
+    },
+    {
+     "name": "Sun Peaks Resort LLP",
+     "lat": 50.88383,
+     "lon": -119.882936,
+     "value": 9.3
+    },
+    {
+     "name": "Tam O Shanter CC",
+     "lat": 42.56465567,
+     "lon": -83.35454867,
+     "value": 4.1
+    },
+    {
+     "name": "The Beloit CLub",
+     "lat": 42.53604902,
+     "lon": -89.03303201,
+     "value": 10.0
+    },
+    {
+     "name": "Thunder Hills Country Club",
+     "lat": 42.45090698,
+     "lon": -90.81375703,
+     "value": 6.5
+    },
+    {
+     "name": "Walnut Creek Country Club",
+     "lat": 42.47367198,
+     "lon": -83.56681903,
+     "value": 3.2
+    },
+    {
+     "name": "Wedgewood Golf Course",
+     "lat": 41.5653,
+     "lon": -88.20548,
+     "value": 8.0
+    },
+    {
+     "name": "Wedgewood Pines Country Club",
+     "lat": 42.44596304,
+     "lon": -71.53425521,
+     "value": 4.7
+    },
+    {
+     "name": "Windham Club",
+     "lat": 41.72704837,
+     "lon": -72.18577615,
+     "value": 8.1
+    },
+    {
+     "name": "Wisconsin River Golf Club",
+     "lat": 44.47201401,
+     "lon": -89.59459002,
+     "value": 5.3
+    },
+    {
+     "name": "Gowanda Country Club",
+     "lat": 42.51781,
+     "lon": -78.9052,
+     "value": 6.8
+    },
+    {
+     "name": "The Wilderness at Fortune Bay",
+     "lat": 47.81880221,
+     "lon": -92.34460953,
+     "value": 9.6
+    },
+    {
+     "name": "Stevens Point Country Club",
+     "lat": 44.51967015,
+     "lon": -89.53276756,
+     "value": 5.4
+    },
+    {
+     "name": "Wolferts roost country club",
+     "lat": 42.67845147,
+     "lon": -73.74531233,
+     "value": 9.6
+    },
+    {
+     "name": "Eau Claire Golf and Country Club",
+     "lat": 44.81169573,
+     "lon": -91.46254343,
+     "value": 9.3
+    },
+    {
+     "name": "Teton Pines Country Club",
+     "lat": 43.52048656,
+     "lon": -110.8481125,
+     "value": 10.0
+    },
+    {
+     "name": "Pinon Hills Golf Course",
+     "lat": 36.76816401,
+     "lon": -108.178228,
+     "value": 6.9
+    },
+    {
+     "name": "Sands Point Golf Club",
+     "lat": 40.85330634,
+     "lon": -73.70453576,
+     "value": 3.8
+    },
+    {
+     "name": "The Majestic @ Lake Walden",
+     "lat": 42.65242801,
+     "lon": -83.76541398,
+     "value": 1.0
+    },
+    {
+     "name": "Sinnissippi Golf Course",
+     "lat": 42.2815875,
+     "lon": -89.06240552,
+     "value": 4.6
+    },
+    {
+     "name": "Frear Park Golf Course",
+     "lat": 42.74392336,
+     "lon": -73.66537847,
+     "value": 9.5
+    },
+    {
+     "name": "Orchard Park Country Club",
+     "lat": 42.75262623,
+     "lon": -78.7418597,
+     "value": 5.6
+    },
+    {
+     "name": "Beaver Meadows",
+     "lat": 43.28892538,
+     "lon": -76.31350971,
+     "value": 7.0
+    },
+    {
+     "name": "East Aurora Country Club",
+     "lat": 42.7840322,
+     "lon": -78.60467267,
+     "value": 9.9
+    },
+    {
+     "name": "Corning Country Club",
+     "lat": 42.16422568,
+     "lon": -77.03425081,
+     "value": 7.2
+    },
+    {
+     "name": "Rolling Meadows Golf Course",
+     "lat": 43.74923825,
+     "lon": -88.48076093,
+     "value": 5.9
+    },
+    {
+     "name": "Lahontan Golf Club",
+     "lat": 39.29460101,
+     "lon": -120.150283,
+     "value": 3.2
+    },
+    {
+     "name": "Stone Creek GC",
+     "lat": 43.39628081,
+     "lon": -76.58899855,
+     "value": 4.3
+    },
+    {
+     "name": "Country Club of Buffalo",
+     "lat": 42.97222453,
+     "lon": -78.72457963,
+     "value": 8.8
+    },
+    {
+     "name": "Glens Falls Country Club",
+     "lat": 43.34854798,
+     "lon": -73.67010713,
+     "value": 1.5
+    },
+    {
+     "name": "The Ranch Golf Club",
+     "lat": 42.0838269,
+     "lon": -72.7779087,
+     "value": 8.6
+    },
+    {
+     "name": "Sky Meadow Country Club",
+     "lat": 42.70565599,
+     "lon": -71.47094301,
+     "value": 8.1
+    },
+    {
+     "name": "Keystone Ranch",
+     "lat": 39.58680503,
+     "lon": -105.9947049,
+     "value": 9.5
+    },
+    {
+     "name": "Edgewood Tahoe",
+     "lat": 38.9633187,
+     "lon": -119.9451147,
+     "value": 9.9
+    },
+    {
+     "name": "The Golf Club at Copper Valley",
+     "lat": 37.917456,
+     "lon": -120.637625,
+     "value": 4.7
+    },
+    {
+     "name": "Old Greenwood Golf Course",
+     "lat": 39.34328541,
+     "lon": -120.1562898,
+     "value": 7.8
+    },
+    {
+     "name": "Ledges Golf Club",
+     "lat": 42.24268142,
+     "lon": -72.60392777,
+     "value": 1.1
+    },
+    {
+     "name": "The Club at Chatham Hills",
+     "lat": 40.08391789,
+     "lon": -86.14217496,
+     "value": 4.8
+    },
+    {
+     "name": "Aalborg Golf Klub",
+     "lat": 57.04936,
+     "lon": 9.91629,
+     "value": 2.5
+    },
+    {
+     "name": "Yellowstone Golf Course",
+     "lat": 42.72318589,
+     "lon": -89.883405,
+     "value": 7.6
+    },
+    {
+     "name": "The Sagamore Golf Club",
+     "lat": 43.58253872,
+     "lon": -73.6675846,
+     "value": 7.0
+    },
+    {
+     "name": "Widgi Creek Golf Club",
+     "lat": 44.00569266,
+     "lon": -121.384366,
+     "value": 8.7
+    },
+    {
+     "name": "Oslo Golfklubb",
+     "lat": 59.96239947,
+     "lon": 10.63892808,
+     "value": 1.1
+    },
+    {
+     "name": "Salmon Run Golf Course",
+     "lat": 42.0622637,
+     "lon": -124.2189301,
+     "value": 7.5
+    },
+    {
+     "name": "royal golf club",
+     "lat": 44.97387839,
+     "lon": -92.86914947,
+     "value": 9.9
+    },
+    {
+     "name": "Killington golf course",
+     "lat": 43.61982021,
+     "lon": -72.8027,
+     "value": 4.0
+    },
+    {
+     "name": "Skellefte\u00e5 Golfklubb",
+     "lat": 64.70674185,
+     "lon": 20.96557,
+     "value": 6.6
+    },
+    {
+     "name": "Torreby gk",
+     "lat": 58.44235,
+     "lon": 11.59795,
+     "value": 4.6
+    },
+    {
+     "name": "Orust Golf Klubb",
+     "lat": 58.19368,
+     "lon": 11.50773,
+     "value": 4.1
+    },
+    {
+     "name": "Highland National Golf Course",
+     "lat": 44.91610501,
+     "lon": -93.16189699,
+     "value": 9.1
+    },
+    {
+     "name": "Black Butte Ranch",
+     "lat": 44.37528,
+     "lon": -121.661133,
+     "value": 6.3
+    },
+    {
+     "name": "Abenakee Club",
+     "lat": 43.44613822,
+     "lon": -70.34425119,
+     "value": 1.6
+    },
+    {
+     "name": "Timber Ridge Golf Club",
+     "lat": 45.82571324,
+     "lon": -89.74326438,
+     "value": 9.7
+    },
+    {
+     "name": "Cross Creek Golf Club",
+     "lat": 40.83457861,
+     "lon": -84.94515099,
+     "value": 8.9
+    },
+    {
+     "name": "Brightwood Golf & Country Club",
+     "lat": 44.67543999,
+     "lon": -63.57242,
+     "value": 1.2
+    },
+    {
+     "name": "Mendon Golf Club",
+     "lat": 42.98482619,
+     "lon": -77.50713661,
+     "value": 7.4
+    },
+    {
+     "name": "River Oaks Golf Course",
+     "lat": 44.78765479,
+     "lon": -92.88492975,
+     "value": 5.3
+    },
+    {
+     "name": "Greenock Country Club",
+     "lat": 42.30313374,
+     "lon": -73.2563722,
+     "value": 3.1
+    },
+    {
+     "name": "Rockledge Golf Course",
+     "lat": 41.74237433,
+     "lon": -72.74888065,
+     "value": 8.7
+    },
+    {
+     "name": "Meadows / Woodlands at Sunriver Resort",
+     "lat": 43.87114386,
+     "lon": -121.4470187,
+     "value": 8.0
+    },
+    {
+     "name": "Long Meadow Golf Club",
+     "lat": 42.64452858,
+     "lon": -71.2717821,
+     "value": 7.5
+    },
+    {
+     "name": "Manchester Country Club",
+     "lat": 43.20576899,
+     "lon": -73.021594,
+     "value": 4.8
+    },
+    {
+     "name": "GC 't Zelle",
+     "lat": 52.05773617,
+     "lon": 6.385348879,
+     "value": 2.3
+    },
+    {
+     "name": "GC Voortwisch",
+     "lat": 51.9851179,
+     "lon": 6.766828714,
+     "value": 1.4
+    },
+    {
+     "name": "Pinehurst Country Club",
+     "lat": 39.64169298,
+     "lon": -105.06534,
+     "value": 5.9
+    }
+   ]
