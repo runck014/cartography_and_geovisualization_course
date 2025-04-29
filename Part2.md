@@ -117,3 +117,19 @@ By the end of this course, students will be able to:
     - Building a 3D globe and adding points -- `06_3d_globe_three_js`
     - Hacking the digital globe
   - Next time: come to class with your presentation and proposal for your 3D project. See `project_proposal_guidelines.md` and `inspiration_presentation_assignement.md` for details of what your presentation should cover.
+
+# Week 12: Inspiration Presentations 3D Geovisualizations
+- Student inspiration and project presentations
+
+# Week 13: Terrain and 3D Models
+- Class Plan
+  - Welcome / questions
+  - Activity: Esri Javascript SDK 3D Terrain and Linked Views
+
+# Week 14: Project 2 Code Reviews
+- Peer reviews
+
+# Week 15:
+- Final presentations
+- Semester review activity
+- [Student Rating of Teaching](https://go.blueja.io/5COzmBc3OEW5OWxr0uYJOQ)
